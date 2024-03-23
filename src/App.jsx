@@ -12,6 +12,9 @@ function App() {
 
   return (
     <>
+      <div className="educational-purposes">
+        Frontend made by academlo instructors for educational purposes
+      </div>
       <NavBar />
       <Container className='py-5'>
         <Outlet />
