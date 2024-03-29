@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { logout } from '../store/slices/app.slice';
 
 const axios = axiosDefault.create({
-    baseURL: 'https://hotels-api.academlo.tech'
+    baseURL: import.meta.env.VITE_APP_URL
 });
 
 axios.interceptors.request.use(function (config) {

@@ -34,13 +34,13 @@ const ReviewsOverview = ({ hotel }) => {
     <>
       <div className="d-flex align-items-center gap-4 mb-3">
         <h3>Reviews</h3>
-        {reviews.length > 0 && (
+        {reviews && reviews.length > 0 && (
           <Button size='sm' variant='success' onClick={openSidebar}>
             See all
           </Button>
         )}
       </div>
-      {reviews.length ? (
+      {reviews && reviews.length ? (
         <Row sm={2} lg={3} xl={4}>
           {getReviews().map(review => (
             <Col key={review.id}>

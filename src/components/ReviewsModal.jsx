@@ -35,7 +35,7 @@ const ReviewsModal = ({ show, handleClose, hotel }) => {
             </div>
           </div>
           <Row md={2} className='g-4'>
-            {reviews.map(review => (
+            {reviews && reviews.map(review => (
               <Col key={review.id}>
                 <ReviewCard review={review} />
               </Col>

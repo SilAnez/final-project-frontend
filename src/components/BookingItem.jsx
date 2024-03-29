@@ -17,7 +17,7 @@ const BookingItem = ({ booking }) => {
     const closeForm = () => setShowForm(false);
     const onChangeReview = review => setReview(review);
     const navigate = useNavigate();
-
+    console.log(booking)
     const price = getDatesDays(booking.checkIn, booking.checkOut) + booking.hotel.price;
 
     useEffect(() => {
